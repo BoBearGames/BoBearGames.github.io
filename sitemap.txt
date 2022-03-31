@@ -1,0 +1,4 @@
+https://bobeargames.github.io/
+https://bobeargames.github.io/?/example
+https://bobeargames.github.io/?/example/two-deep&field1=foo~and~field2=bar#boom!
+https://bobeargames.github.io/?/sitemap-link-generator
