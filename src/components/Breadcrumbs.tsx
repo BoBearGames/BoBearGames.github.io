@@ -8,9 +8,7 @@ interface breadCrumbTitlesInterface {
 
 const breadCrumbTitles: breadCrumbTitlesInterface = {
   '': 'Home',
-  example: 'Example',
-  'two-deep': 'Two Deep',
-  'sitemap-link-generator': 'Sitemap Link Generator',
+  privacy: 'Privacy Policy',
 };
 
 const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {

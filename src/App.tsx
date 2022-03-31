@@ -1,14 +1,11 @@
 import * as React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { DarkModeButton } from './ui/DarkModeButton';
-import { GitHubIconLink } from './ui/GitHubIconLink';
-import { globalCss, styled } from './stitches.config';
-import { Home } from './components/Home';
-import { ExampleComponent } from './components/ExampleComponent';
-import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
-import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
-import { PageNotFound } from './components/PageNotFound';
+import { Route, Switch } from 'react-router-dom';
 import { Breadcrumbs } from './components/Breadcrumbs';
+import { Home } from './components/Home';
+import { PageNotFound } from './components/PageNotFound';
+import { PrivacyComponent } from './components/PrivacyComponent';
+import { globalCss, styled } from './stitches.config';
+import { DarkModeButton } from './ui/DarkModeButton';
 
 const AppContainer = styled('div', {
   maxWidth: '540px',
@@ -44,13 +41,9 @@ export const App: React.VFC = () => {
   return (
     <AppContainer>
       <HeaderContainer>
-        <H1>Single Page Apps for GitHub Pages</H1>
+        <H1>Welcome to Bo Bear Games</H1>
         <HeaderIconContainer>
           <DarkModeButton />
-          <GitHubIconLink
-            href="https://github.com/rafgraph/spa-github-pages"
-            title="GitHub repository for SPA GitHub Pages"
-          />
         </HeaderIconContainer>
       </HeaderContainer>
 
@@ -60,17 +53,7 @@ export const App: React.VFC = () => {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/example" component={ExampleComponent} />
-        <Route
-          exact
-          path="/example/two-deep"
-          component={ExampleTwoDeepComponent}
-        />
-        <Route
-          exact
-          path="/sitemap-link-generator"
-          component={SitemapLinkGenerator}
-        />
+        <Route exact path="/privacy" component={PrivacyComponent} />
         <Route component={PageNotFound} />
       </Switch>
     </AppContainer>
