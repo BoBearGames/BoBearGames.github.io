@@ -6,3 +6,7 @@ generated
 
 # Files marked with gitigx
 *gitigx*
+
+.vscode/
+build
+.DS_Store
