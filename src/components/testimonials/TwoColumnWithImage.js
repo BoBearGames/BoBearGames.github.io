@@ -10,6 +10,7 @@ import { ReactComponent as ArrowLeftIcon } from "../../images/arrow-left-2-icon.
 import { ReactComponent as ArrowRightIcon } from "../../images/arrow-right-2-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
+import aboutus from "../../images/aboutus.png";
 
 import "slick-carousel/slick/slick.css";
 
@@ -76,36 +77,19 @@ export default () => {
    */
   const testimonials = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      imageSrc: aboutus,
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
+        "We are a team of two! Bo Bear Games is a small game studio and publisher based in Toronto, Ontario, Canada, founded in 2022 by a husband-and-wife team. We are focused on creating casual mobile games and hope you find our games fun and entertaining. Thank you for supporting us!",
+      // customerName: "John Doe",
+      // customerTitle: "CEO, Delos Inc."
     },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti",
-      customerTitle: "Event Manager, Brite"
-    }
   ];
   return (
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>Our Awesome Customers</HeadingTitle>
-          <HeadingDescription></HeadingDescription>
+          <HeadingTitle id="about">About Us</HeadingTitle>
+          {/* <HeadingDescription></HeadingDescription> */}
         </HeadingInfoContainer>
         <TestimonialSliderContainer>
           <TestimonialSlider nextArrow={<NextArrow />} prevArrow={<PreviousArrow />}>
@@ -116,9 +100,9 @@ export default () => {
                 </ImageContainer>
                 <TextContainer>
                   <QuoteContainer>
-                    <QuotesLeft />
+                    {/* <QuotesLeft /> */}
                     <Quote>{testimonial.quote}</Quote>
-                    <QuotesRight />
+                    {/* <QuotesRight /> */}
                   </QuoteContainer>
                   <CustomerInfo>
                     <CustomerName>{testimonial.customerName}</CustomerName>

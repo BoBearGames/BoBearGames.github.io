@@ -3,6 +3,11 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
+import appleBadgeImageSrc from "images/download-on-the-app-store.png";
+import googleBadgeImageSrc from "images/google-play-badge.png"
+import colorSortImg from "images/color_sort_1.png";
+import scrambleImg from "images/wordscramble1.jpg";
+import blastImg from "images/blast1.jpg";
 
 const Container = tw.div`relative`;
 
@@ -22,10 +27,17 @@ const Image = styled.div(props => [
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
-const Title = tw.h4`text-3xl font-bold text-gray-900`;
+const Subtitle = tw.div`font-bold tracking-wide text-secondary-200`;
+const Title = tw.h4`text-3xl font-bold text-blue-800`;
 const Description = tw.p`mt-2 text-sm leading-loose`;
-const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
+// const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
+
+const LinksContainer = tw.div`mt-8 lg:mt-16 flex flex-col items-center sm:block`
+const Link = styled.a`
+  img {
+    ${tw`inline-block h-12 mr-3`}
+  }
+`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -43,32 +55,29 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      subtitle: "Paid",
-      title: "Loachella, NYC",
+      imageSrc: colorSortImg,
+      subtitle: "Puzzle",
+      title: "COLOR SORT",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Combine rings with the same color to win! A simple yet challenging puzzle game that can be enjoyed by everyone. Can you solve it?",
       url: "https://timerse.com"
     },
 
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
+      imageSrc: scrambleImg,
+      subtitle: "Word",
+      title: "WORD SCRAMBLE",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Unscramble words to crack the phrase, name the tune and more! This game will test your knowledge and puzzle solving abilities. If you love word games and puzzles, Word Scramble is the perfect brain tease for you.",
       url: "https://timerse.com"
     },
 
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
+      imageSrc: blastImg,
+      subtitle: "Casual",
+      title: "ADVENTURE BLAST",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Meet Jimmy, an adorable hand-drawn character. Jump from platform to platform, blast or dodge silly monsters and collect stars to unlock new exciting worlds. Reach new heights by blasting on rockets, propeller hats and more! How high can you jump?",
       url: "https://timerse.com"
     }
   ];
@@ -77,9 +86,9 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Events</HeadingTitle>
+          <HeadingTitle id="games">Featured Games</HeadingTitle>
           <HeadingDescription>
-            Here are some of the most popular events in New York City curated by professionals.
+            Here are some of our latest releases.
           </HeadingDescription>
         </HeadingInfoContainer>
 
@@ -91,7 +100,14 @@ export default () => {
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
-                <Link href={card.url}>See Event Details</Link>
+                <LinksContainer>
+                  <Link href={'#'}>
+                    <img src={appleBadgeImageSrc} alt=""/>
+                  </Link>
+                  <Link href={'#'}>
+                    <img src={googleBadgeImageSrc} alt=""/>
+                  </Link>
+                </LinksContainer>
               </Details>
             </Card>
           ))}

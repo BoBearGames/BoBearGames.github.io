@@ -84,6 +84,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
+import LandingPage from "demos/LandingPage.js";
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
@@ -106,6 +107,8 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TermsOfService from "pages/TermsOfService";
+import PrivacyPolicy from "pages/PrivacyPolicy";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -115,17 +118,14 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
+        <Route path="/privacy-policy">
+          <PrivacyPolicy />
         </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
+        <Route path="/terms-of-service">
+          <TermsOfService />
         </Route>
         <Route path="/">
-          <MainLandingPage />
+          <LandingPage />
         </Route>
       </Switch>
     </Router>

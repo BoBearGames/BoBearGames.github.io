@@ -2,13 +2,17 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import background from '../../images/background.png';
 
-import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks, AnchorNavLink } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
+  }
+  ${DesktopNavLinks} ${AnchorNavLink}, ${LogoLink} {
+    ${tw`text-blue-700 hover:border-blue-900 hover:text-blue-900`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
@@ -18,16 +22,16 @@ const StyledHeader = styled(Header)`
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  background-image: url("${background}");
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-10`;
 
 const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
+  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-blue-700 leading-snug -mt-24`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -38,24 +42,16 @@ const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-bas
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Blog
-      </NavLink>
-      <NavLink href="#">
-        Locations
-      </NavLink>
-      <NavLink href="#">
-        Pricing
-      </NavLink>
+      <AnchorNavLink href="#games">
+        GAMES
+      </AnchorNavLink>
+      <AnchorNavLink href="#about">
+        ABOUT US
+      </AnchorNavLink>
+      <AnchorNavLink href="#contact">
+        SUPPORT
+      </AnchorNavLink>
     </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
   ];
 
   return (
@@ -64,12 +60,11 @@ export default () => {
       <HeroContainer>
         <StyledHeader links={navLinks} />
         <Content>
-          <Heading>
-              Book Music & Comedy Events
+          <Heading style={{fontFamily: 'StopBullying'}}>
+              Welcome to
               <br />
-              anywhere in New York
+              Bo Bear Games
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

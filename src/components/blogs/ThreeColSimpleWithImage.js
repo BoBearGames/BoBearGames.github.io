@@ -34,31 +34,24 @@ export default () => {
     {
       imageSrc:
         "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Event Tips",
-      title: "Finding Amazing Events Near You - Fast, Cheap & Free",
+      category: "Word",
+      title: "Cross",
       url: "https://timerse.com"
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1543365067-fa127bcb2303?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Reviews",
-      title: "The Top Rated Musical Concerts Worldwide in 2019",
+      category: "Casual",
+      title: "Animal Match",
       url: "https://reddit.com"
     },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "Discover",
-      title: "This female band is making buzz all over the world",
-      url: "https://timerse.com"
-    }
   ];
   return (
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Blog Posts</HeadingTitle>
-          <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription>
+          <HeadingTitle>Other Popular Games</HeadingTitle>
+          <HeadingDescription>Check out some of our other titles.</HeadingDescription>
         </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (
