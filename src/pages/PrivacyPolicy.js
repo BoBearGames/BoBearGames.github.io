@@ -1,12 +1,11 @@
-import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
+import Header from "components/headers/light.js";
 import { SectionHeading } from "components/misc/Headings";
+import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900 mb-10`;
@@ -34,353 +33,261 @@ const Text = styled.div`
     }
   }
 `;
+const Link = tw.a`underline`;
 export default ({ headingText = "Privacy Policy" }) => {
   return (
     <AnimationRevealPage disabled="true">
-      <Header />
+      <Header links={[]} />
       <Container>
         <ContentWithPaddingXl>
           <HeadingRow>
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <p>Last updated: April 21, 2020</p>
+            <p>Last updated: April 6, 2022</p>
 
             <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-              information when You use the Service and tells You about Your privacy rights and how the law protects You.
+              We ask that you read this privacy policy (“Privacy Policy”) carefully as it contains important information on how we collect, use, store, disclose and process certain information collected in connection with our Services (described below).
             </p>
 
             <p>
-              We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-              collection and use of information in accordance with this Privacy Policy.
+              We respect the privacy of our users and are committed to protecting our users’ information. We believe that users have a right to know our practices regarding the information that we may collect and use when you use our Services.
             </p>
 
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
+            <h1>1. Introduction</h1>
             <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions.
-            </p>
-            <p>
-              The following definitions shall have the same meaning regardless of whether they appear in singular or in
-              plural.
+              Bo Bear Games Inc. (“Bo Bear Games”) develops and publishes a variety of games for mobile devices, each referred to as an “Application”. Our Privacy Policy applies whenever your information is processed as part of our “Services,” which includes any games/applications, products, content and/or websites operated by Bo Bear Games. This Privacy Policy describes how we process your personal information and your rights and choices concerning your personal information. We will not use or share your information with anyone except as described in this Privacy Policy.
             </p>
 
-            <h2>Definitions</h2>
-            <p>For the purposes of this Privacy Policy:</p>
+            <h1>2. The Information We Collect and How We Collect It</h1>
+
+            <h2>Personal Information</h2>
             <ul>
               <li>
                 <p>
-                  <strong>You</strong> means the individual accessing or using the Service, or the company, or other
-                  legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+                  Bo Bear Games collects the advertising identifier (Apple’s IDFA and Google’s advertiser ID) and a unique identifier for each user in our Applications.
                 </p>
               </li>
               <li>
                 <p>
-                  <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement)
-                  refers to Treact.
+                  Bo Bear Games integrates third party SDKs into our Applications. These SDKs are used for advertising to our users, analyzing service usage, enabling in-app purchases, or providing game services including account management. We provide third party service providers this data solely for internal operations of the Applications. This could include, but is not limited to, advertising identifiers, geolocation information and IP address. We encourage you to review the policies of our third party service providers listed below.
                 </p>
-              </li>
-              <li>
-                <strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control
-                with a party, where "control" means ownership of 50% or more of the shares, equity interest or other
-                securities entitled to vote for election of directors or other managing authority.
-              </li>
-              <li>
-                <strong>Account</strong> means a unique account created for You to access our Service or parts of our
-                Service.
-              </li>
-              <li>
-                <strong>Website</strong> refers to Treact, accessible from https://treact.com
-              </li>{" "}
-              <li>
-                <strong>Service</strong> refers to the Website.
-              </li>
-              <li>
-                <strong>Country</strong> refers to: Maharashtra, India
               </li>
               <li>
                 <p>
-                  <strong>Service Provider</strong> means any natural or legal person who processes the data on behalf
-                  of the Company. It refers to third-party companies or individuals employed by the Company to
-                  facilitate the Service, to provide the Service on behalf of the Company, to perform services related
-                  to the Service or to assist the Company in analyzing how the Service is used.
+                  If a user explicitly provides it to us when prompted, we will collect email addresses of our users for our mailing list(s), account recovery or customer support purposes.
                 </p>
-              </li>
-              <li>
-                <strong>Third-party Social Media Service</strong> refers to any website or any social network website
-                through which a User can log in or create an account to use the Service.
               </li>
               <li>
                 <p>
-                  <strong>Personal Data</strong> is any information that relates to an identified or identifiable
-                  individual.
+                  Some of our Applications may require or allow a user to provide a screen name so they can be identified within the game.
                 </p>
               </li>
               <li>
-                <strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other
-                device by a website, containing the details of Your browsing history on that website among its many
-                uses.
-              </li>{" "}
-              <li>
-                <strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the
-                Service or from the Service infrastructure itself (for example, the duration of a page visit).
+                <p>
+                  If a user purchases in-game virtual currency or items in an Application, they will have to select a third party payment processor who will collect the billing and financial information it needs to process the payment. This may include a user’s postal address, email address, and financial information. Our third party payment processes do not share financial information such as credit card numbers, but they may share non-financial information with us related to a user’s purchases, such as their name, billing address, and the items purchased.
+                </p>
               </li>
             </ul>
 
-            <h1>Collecting and Using Your Personal Data</h1>
-            <h2>Types of Data Collected</h2>
-
-            <h3>Personal Data</h3>
-            <p>
-              While using Our Service, We may ask You to provide Us with certain personally identifiable information
-              that can be used to contact or identify You. Personally identifiable information may include, but is not
-              limited to:
-            </p>
-            <ul>
-              <li>Email address</li> <li>First name and last name</li> <li>Phone number</li>{" "}
-              <li>Address, State, Province, ZIP/Postal code, City</li> <li>Usage Data</li>
-            </ul>
-
-            <h3>Usage Data</h3>
-            <p>Usage Data is collected automatically when using the Service.</p>
-            <p>
-              Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address),
-              browser type, browser version, the pages of our Service that You visit, the time and date of Your visit,
-              the time spent on those pages, unique device identifiers and other diagnostic data.
-            </p>
-            <p>
-              When You access the Service by or through a mobile device, We may collect certain information
-              automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique
-              ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet
-              browser You use, unique device identifiers and other diagnostic data.
-            </p>
-            <p>
-              We may also collect information that Your browser sends whenever You visit our Service or when You access
-              the Service by or through a mobile device.
-            </p>
-
-            <h3>Tracking Technologies and Cookies</h3>
-            <p>
-              We use Cookies and similar tracking technologies to track the activity on Our Service and store certain
-              information. Tracking technologies used are beacons, tags, and scripts to collect and track information
-              and to improve and analyze Our Service.
-            </p>
-            <p>
-              You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However,
-              if You do not accept Cookies, You may not be able to use some parts of our Service.
-            </p>
-            <p>
-              Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or
-              mobile device when You go offline, while Session Cookies are deleted as soon as You close your web
-              browser. Learn more about cookies: <a href="https://www.termsfeed.com/blog/cookies/">All About Cookies</a>
-              .
-            </p>
-            <p>We use both session and persistent Cookies for the purposes set out below:</p>
+            <h2>Non-personal Information</h2>
             <ul>
               <li>
                 <p>
-                  <strong>Necessary / Essential Cookies</strong>
-                </p>
-                <p>Type: Session Cookies</p>
-                <p>Administered by: Us</p>
-                <p>
-                  Purpose: These Cookies are essential to provide You with services available through the Website and to
-                  enable You to use some of its features. They help to authenticate users and prevent fraudulent use of
-                  user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We
-                  only use these Cookies to provide You with those services.
+                  We allow third parties to collect some information by which users cannot be identified. Non-personal information may include technical information about your device, such as your browser type, screen resolution, device type, language, type of operating system and geo location (only general location). Non-personal information is gathered by third party service providers while you are accessing the Applications. They are allowed to use this information to conduct research and analysis, but only for strictly limited purposes.
                 </p>
               </li>
               <li>
                 <p>
-                  <strong>Cookies Policy / Notice Acceptance Cookies</strong>
-                </p>
-                <p>Type: Persistent Cookies</p>
-                <p>Administered by: Us</p>
-                <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
-              </li>
-              <li>
-                <p>
-                  <strong>Functionality Cookies</strong>
-                </p>
-                <p>Type: Persistent Cookies</p>
-                <p>Administered by: Us</p>
-                <p>
-                  Purpose: These Cookies allow us to remember choices You make when You use the Website, such as
-                  remembering your login details or language preference. The purpose of these Cookies is to provide You
-                  with a more personal experience and to avoid You having to re-enter your preferences every time You
-                  use the Website.
+                  Internally, Bo Bear Games also reserves the right to collect anonymous information for research and analysis. This information is generic in nature and cannot be used to individually identify a user. This information is collected each time a user runs one of our Applications.
                 </p>
               </li>
             </ul>
-            <p>
-              For more information about the cookies we use and your choices regarding cookies, please visit our Cookies
-              Policy.
-            </p>
 
-            <h2>Use of Your Personal Data</h2>
-            <p>The Company may use Personal Data for the following purposes:</p>
+            <h1>3. What We Do With The Information We Collect</h1>
+
+            <h2>Personal Information</h2>
             <ul>
               <li>
-                <strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.
+                <p>
+                  Advertisers collect data regarding advertisement performance, users’ interaction with ads, our Applications and users’ interests. Collected data may include the users’ personal information in order to serve users ads and for the third parties’ legitimate business interests.
+                </p>
               </li>
               <li>
-                <strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The
-                Personal Data You provide can give You access to different functionalities of the Service that are
-                available to You as a registered user.
+                <p>
+                  Bo Bear Games and third party service providers may use collected personal data to help measure the effectiveness of our promotional campaigns.
+                </p>
               </li>
               <li>
-                <strong>For the performance of a contract:</strong> the development, compliance and undertaking of the
-                purchase contract for the products, items or services You have purchased or of any other contract with
-                Us through the Service.
+                <p>
+                  Bo Bear Games collects persistent identifiers in order to provide support for our Applications to our users. Additionally, Bo Bear Games uses persistent identifiers to send promotions regarding new products or updates to our users. If we keep track of persistent advertising identifiers, it allows us to only notify these users about new products that they will actually be interested in.
+                </p>
               </li>
               <li>
-                <strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent
-                forms of electronic communication, such as a mobile application's push notifications regarding updates
-                or informative communications related to the functionalities, products or contracted services, including
-                the security updates, when necessary or reasonable for their implementation.
+                <p>
+                  We may collect email addresses in some of our Services so that we can notify interested users of upcoming releases and updates of our games and products. These emails always include a way to unsubscribe from receiving future emails. We may also collect email addresses for the purposes of offering support or recovering a user’s account.
+                </p>
               </li>
               <li>
-                <strong>To provide You</strong> with news, special offers and general information about other goods,
-                services and events which we offer that are similar to those that you have already purchased or enquired
-                about unless You have opted not to receive such information.
-              </li>
-              <li>
-                <strong>To manage Your requests:</strong> To attend and manage Your requests to Us.
+                <p>
+                  When an Application asks for a screen name, it is used to visually identify that user to other users playing the game. Bo Bear Games prohibits any user under the age of 13 from providing individually identifiable information in their username or screen name. This includes, but is not limited to the user’s first name, last name, email address, and physical address.
+                </p>
               </li>
             </ul>
 
-            <p>We may share your personal information in the following situations:</p>
-
+            <h2>Non-personal Information</h2>
             <ul>
               <li>
-                <strong>With Service Providers:</strong> We may share Your personal information with Service Providers
-                to monitor and analyze the use of our Service, to contact You.
+                <p>
+                  Third party service providers are allowed to collect and use non-personal information to conduct research and analysis, to target advertisements or other limited purposes. This information cannot be used to individually identify any user. We encourage you to review the policies of the third party service providers listed below.
+                </p>
               </li>
               <li>
-                <strong>For Business transfers:</strong> We may share or transfer Your personal information in
-                connection with, or during negotiations of, any merger, sale of Company assets, financing, or
-                acquisition of all or a portion of our business to another company.
-              </li>
-              <li>
-                <strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we
-                will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and
-                any other subsidiaries, joint venture partners or other companies that We control or that are under
-                common control with Us.
-              </li>
-              <li>
-                <strong>With Business partners:</strong> We may share Your information with Our business partners to
-                offer You certain products, services or promotions.
-              </li>
-              <li>
-                <strong>With other users:</strong> when You share personal information or otherwise interact in the
-                public areas with other users, such information may be viewed by all users and may be publicly
-                distributed outside. If You interact with other users or register through a Third-Party Social Media
-                Service, Your contacts on the Third-Party Social Media Service may see Your name, profile, pictures and
-                description of Your activity. Similarly, other users will be able to view descriptions of Your activity,
-                communicate with You and view Your profile.
+                <p>
+                  Similarly, Bo Bear Games also uses non-personal information to conduct research and analysis. We do this to improve our services in future updates or to gain knowledge about how our users are interacting with our Services.
+                </p>
               </li>
             </ul>
 
-            <h2>Retention of Your Personal Data</h2>
+            <h2>Disclosure of Personal Information</h2>
+            <p>The scenarios in which we will share your personal information are as follows:</p>
+            <ul>
+              <li>
+                <p>
+                  We determine that it is required by law, such as to comply with a subpoena, or similar legal process
+                </p>
+              </li>
+              <li>
+                <p>
+                  We believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request
+
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are participating in a merger, acquisition, liquidation, dissolution or sale of assets
+                </p>
+              </li>
+              <li>
+                <p>
+                  We have your consent
+                </p>
+              </li>
+              <li>
+                <p>
+                  In relation to third party service providers collecting information from our Applications as described in this Privacy Policy
+                </p>
+              </li>
+            </ul>
+            <p>Under no other circumstances will Bo Bear Games share, sell, rent, or release your information.</p>
+
+            <h1>4. Your Rights</h1>
+
+            <h2>Opt-out of all information collection:</h2>
             <p>
-              The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in
-              this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our
-              legal obligations (for example, if we are required to retain your data to comply with applicable laws),
-              resolve disputes, and enforce our legal agreements and policies.
-            </p>
-            <p>
-              The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained
-              for a shorter period of time, except when this data is used to strengthen the security or to improve the
-              functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
+              You can stop collection of all information by uninstalling the Application(s). You may use the standard uninstall processes that are available as part of your mobile device or via the mobile platform or network. You can also request to opt-out by contacting us via email at <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link>.
             </p>
 
-            <h2>Transfer of Your Personal Data</h2>
+            <h2>Opt-out of targeted advertising:</h2>
             <p>
-              Your information, including Personal Data, is processed at the Company's operating offices and in any
-              other places where the parties involved in the processing are located. It means that this information may
-              be transferred to — and maintained on — computers located outside of Your state, province, country or
-              other governmental jurisdiction where the data protection laws may differ than those from Your
-              jurisdiction.
-            </p>
-            <p>
-              Your consent to this Privacy Policy followed by Your submission of such information represents Your
-              agreement to that transfer.
-            </p>
-            <p>
-              The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in
-              accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an
-              organization or a country unless there are adequate controls in place including the security of Your data
-              and other personal information.
+              You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your iOS or Android device and selecting "limit ad tracking" (Apple iOS) or "opt-out of interest based ads" (Android).
             </p>
 
-            <h2>Disclosure of Your Personal Data</h2>
-            <h3>Business Transactions</h3>
+            <h2>Other Rights:</h2>
             <p>
-              If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.
-              We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy
-              Policy.
+              You may request access, change, update or delete your personal information at any time by contacting us via email at <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link>. You have the right to these options as well as the right to not be discriminated against for exercising these options. We will respond to all requests within a reasonable timeframe.
             </p>
-            <h3>Law enforcement</h3>
+
+            <h2>California Residents:</h2>
             <p>
-              Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do
-              so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+              The California Consumer Privacy Act (“CCPA”) allows California residents to opt-out of the sale of your personal information. Bo Bear Games does not sell your personal information. We adhere to the CCPA by allowing you to opt-out of any future sale of your personal information by emailing us at <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link>.
             </p>
-            <h3>Other legal requirements</h3>
+
+            <h1>5. Children's Privacy</h1>
             <p>
-              The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
+              Our Services are not marketed to, or intended for, children under 13 and we do not knowingly collect, use, or disclose personal information from children under 13. We take children’s privacy seriously and encourage parents and guardians to play an active role in their children’s online experience. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take measures to promptly remove that information from our records.
+            </p>
+
+            <h1>6. Data Retention</h1>
+            <p>
+              How long we retain your personal information depends on why we collected it and how we use it, but we will not retain your personal information for longer than is necessary to provide you with the Services or for our legal requirements.
+            </p>
+            <p>
+              We will retain personal information that is connected with your account and/or the Services you use from us for as long as you have an active account with us. We will take measures to delete this personal information if you delete your account. However, you acknowledge that we may retain some information after you have closed, or we have deleted, your account with us where necessary to enable us to meet our legal obligations or to exercise, defend, or establish our rights.
+            </p>
+
+            <h1>7. International Operations and Data Transfers</h1>
+            <p>
+              Bo Bear Games is based in Canada but our Services are global by nature and your data can therefore be transferred to anywhere in the world. Because different countries may have different data protection laws than your own country, we take steps to ensure adequate safeguards are in place to protect your data as explained in this Privacy Policy. Adequate safeguards that our partners may use include standard contractual clauses approved by EU Commission and the Privacy Shield certification in the case of transfers to the USA.
+            </p>
+
+            <h1>8. Security</h1>
+            <p>
+              We follow generally accepted industry standards and internal procedures to protect personal information submitted to us, both during transmission and once we receive it. While we take precautions against possible security breaches of our Services and our customer databases and records, no website or Internet transmission is completely secure. We cannot guarantee that unauthorized access, hacking, data loss, or other breaches will never occur, and we cannot guarantee the security of your information while it is being transmitted to our Service. Any transmission is at your own risk.
+            </p>
+
+            <h1>9. Third-Party Service Providers</h1>
+
+            <h2>Advertising Networks:</h2>
+            <p>
+              Bo Bear Games allows advertisements from third party ad networks to be displayed in our Applications. We make commercially reasonable efforts to ensure that the third party ad networks are configured to comply with applicable privacy laws, and we reasonably believe this to be the case for each of them. For persons in European Union countries, we also configure networks to be compliant with the General Data Protection Regulation of 2016 (GDPR).
+            </p>
+
+            <h2>In-App Purchases:</h2>
+            <p>
+              In order to make in-app purchases, a user must select a third party payment processor that we have integrated with our Applications to finalize and pay for their order. The third party operator’s privacy policy and security practices will apply to this process a user’s information. We encourage you to read that privacy statement before providing your information.
+            </p>
+
+            <h2>Social Networks:</h2>
+            <p>
+              Some of our Applications may integrate a third party social network such as Facebook or Twitter to allow sharing progress with friends, or allowing them to be invited to use our service. The privacy policy of each social network will indicate what data is available to us and how we use it.
+            </p>
+
+            <h2>Analytics:</h2>
+            <p>
+              Bo Bear Games makes use of third party service providers in order to measure how users utilize our services so that we may improve them and to measure the effectiveness of our advertising campaigns.
+            </p>
+            <p>
+              The following is a comprehensive list of the third party service providers we currently use in our Services, their location and links to their privacy policies. Please note that each individual Application we offer may only use a subset of these operators:
             </p>
             <ul>
-              <li>Comply with a legal obligation</li>
-              <li>Protect and defend the rights or property of the Company</li>
-              <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-              <li>Protect the personal safety of Users of the Service or the public</li>
-              <li>Protect against legal liability</li>
+              <li>
+                <strong>Applovin</strong> (located in the United States) - <Link href="https://www.applovin.com/privacy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>AdColony</strong> (located in the United States) - <Link href="http://www.adcolony.com/privacy-policy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Facebook</strong> (located in the United States) - <Link href="https://www.facebook.com/privacy/explanation">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Tapjoy</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://www.tapjoy.com/legal/general/privacy-policy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>UnityAds</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://unity3d.com/legal/privacy-policy">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Kochava</strong> (located in the United States) - <Link href="https://www.kochava.com/kochava-difference/kochava-security-privacy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Apple</strong> (located in the United States) - <Link href="https://www.apple.com/legal/privacy/en-ww/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Google Play Services</strong> (located in the United States) - <Link href="https://www.google.com/policies/privacy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Firebase Crashlytics</strong> (located in the United States) - <Link href="https://firebase.google.com/policies/analytics">Read their Privacy Policy</Link>
+              </li>
             </ul>
 
-            <h2>Security of Your Personal Data</h2>
+            <h1>10. Changes to This Privacy Policy</h1>
             <p>
-              The security of Your Personal Data is important to Us, but remember that no method of transmission over
-              the Internet, or method of electronic storage is 100% secure. While We strive to use commercially
-              acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+              We may update our Privacy Policy from time to time. When we do, we will revise the “last updated” date at the top of the policy and notify you of any changes by posting the new Privacy Policy on this page. We encourage you to periodically check this Privacy Policy for updates as your continued use of our services indicate your acceptance of any changes to this privacy policy. If you would like a copy of earlier policies, please get in touch using the Contact Us information below.
             </p>
 
-            <h1>Children's Privacy</h1>
+            <h1>11. Contact Us</h1>
             <p>
-              Our Service does not address anyone under the age of 13. We do not knowingly collect personally
-              identifiable information from anyone under the age of 13. If You are a parent or guardian and You are
-              aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We
-              have collected Personal Data from anyone under the age of 13 without verification of parental consent, We
-              take steps to remove that information from Our servers.
-            </p>
-            <p>
-              If We need to rely on consent as a legal basis for processing Your information and Your country requires
-              consent from a parent, We may require Your parent's consent before We collect and use that information.
-            </p>
-
-            <h1>Links to Other Websites</h1>
-            <p>
-              Our Service may contain links to other websites that are not operated by Us. If You click on a third party
-              link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy
-              of every site You visit.
-            </p>
-            <p>
-              We have no control over and assume no responsibility for the content, privacy policies or practices of any
-              third party sites or services.
-            </p>
-
-            <h1>Changes to this Privacy Policy</h1>
-            <p>
-              We may update our Privacy Policy from time to time. We will notify You of any changes by posting the new
-              Privacy Policy on this page.
-            </p>
-            <p>
-              We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming
-              effective and update the "Last updated" date at the top of this Privacy Policy.
-            </p>
-            <p>
-              You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
-              are effective when they are posted on this page.
+              If you have any questions, comments, or concerns regarding our Privacy Policy and/or privacy practices, please send an email to <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link>.
             </p>
           </Text>
         </ContentWithPaddingXl>

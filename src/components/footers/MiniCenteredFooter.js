@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
+import { Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "../../images/logo.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
@@ -36,16 +36,16 @@ export default () => {
         <Row>
           <LinksContainer>
             <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-of-service">Terms of Service</Link>
+            {/* <Link href="/terms-of-service">Terms of Service</Link> */}
           </LinksContainer>
-          <SocialLinksContainer>
+          {/* <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
               <TwitterIcon />
             </SocialLink>
-          </SocialLinksContainer>
+          </SocialLinksContainer> */}
           <CopyrightText>
             &copy; Copyright 2022, Bo Bear Games Inc. All Rights Reserved.
           </CopyrightText>

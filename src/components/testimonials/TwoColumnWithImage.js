@@ -79,7 +79,7 @@ export default () => {
     {
       imageSrc: aboutus,
       quote:
-        "We are a team of two! Bo Bear Games is a small game studio and publisher based in Toronto, Ontario, Canada, founded in 2022 by a husband-and-wife team. We are focused on creating casual mobile games and hope you find our games fun and entertaining. Thank you for supporting us!",
+        "We are a team of two! Bo Bear Games is a small game studio and publisher based in Toronto, Canada, founded in 2022 by a husband-and-wife team. We are focused on creating casual mobile games and hope you find our games fun and entertaining. Thank you for supporting us!",
       // customerName: "John Doe",
       // customerTitle: "CEO, Delos Inc."
     },

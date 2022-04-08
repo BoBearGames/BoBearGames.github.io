@@ -101,11 +101,11 @@ export default () => {
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
                 <LinksContainer>
-                  <Link href={'#'}>
-                    <img src={appleBadgeImageSrc} alt=""/>
+                  <Link>
+                    <img src={appleBadgeImageSrc} alt="" />
                   </Link>
-                  <Link href={'#'}>
-                    <img src={googleBadgeImageSrc} alt=""/>
+                  <Link>
+                    <img src={googleBadgeImageSrc} alt="" />
                   </Link>
                 </LinksContainer>
               </Details>
