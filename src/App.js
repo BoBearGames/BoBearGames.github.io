@@ -118,6 +118,9 @@ export default function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/privacy">
+          <PrivacyPolicy />
+        </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
         </Route>
