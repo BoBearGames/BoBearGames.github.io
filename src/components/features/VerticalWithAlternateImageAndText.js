@@ -41,16 +41,16 @@ const Link = styled.a`
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
-)`absolute top-0 left-0 transform -translate-x-20 rotate-90 translate-y-8 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+)`absolute top-0 left-0 transform -translate-x-20 rotate-90 translate-y-8 -z-10 opacity-25 text-green-500 fill-current w-24`;
 const SvgDotPattern2 = tw(
   SvgDotPatternIcon
-)`absolute top-0 right-0 transform translate-x-20 rotate-45 translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+)`absolute top-0 right-0 transform translate-x-20 rotate-45 translate-y-24 -z-10 opacity-25 text-blue-500 fill-current w-24`;
 const SvgDotPattern3 = tw(
   SvgDotPatternIcon
-)`absolute bottom-0 left-0 transform -translate-x-20 rotate-45 -translate-y-8 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+)`absolute bottom-0 left-0 transform -translate-x-20 rotate-45 -translate-y-8 -z-10 opacity-25 text-blue-500 fill-current w-24`;
 const SvgDotPattern4 = tw(
   SvgDotPatternIcon
-)`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+)`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-green-500 fill-current w-24`;
 
 export default () => {
   const cards = [

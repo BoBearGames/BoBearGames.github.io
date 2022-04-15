@@ -95,7 +95,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      <span tw="text-xl">Bo Bear Games</span>
+      <span tw="text-base text-blue-900">Bo Bear Games</span>
     </LogoLink>
   );
 

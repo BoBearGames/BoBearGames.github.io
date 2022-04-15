@@ -65,10 +65,10 @@ const PreviousArrow = ({ currentSlide, slideCount, ...props }) => (
 
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
-)`absolute w-32 top-0 left-0 -z-10 text-primary-500 opacity-25 transform -translate-x-full`;
+)`absolute w-32 top-0 left-0 -z-10 text-yellow-500 opacity-25 transform -translate-x-full`;
 const DecoratorBlob2 = tw(
   SvgDecoratorBlob2
-)`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
+)`absolute w-32 bottom-0 right-0 -z-10 text-blue-500 opacity-15 transform translate-x-2/3 translate-y-8`;
 
 export default () => {
   /*

@@ -12,7 +12,7 @@ const StyledHeader = styled(Header)`
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${DesktopNavLinks} ${AnchorNavLink}, ${LogoLink} {
-    ${tw`text-blue-700 hover:border-blue-900 hover:text-blue-900`}
+    ${tw`text-blue-900 hover:border-blue-700 hover:text-blue-700`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
@@ -31,7 +31,7 @@ const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-blue-700 leading-snug -mt-24`}
+  ${tw`text-3xl text-center sm:text-4xl lg:text-6xl xl:text-6xl font-black text-blue-900 leading-snug -mt-24`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -60,10 +60,11 @@ export default () => {
       <HeroContainer>
         <StyledHeader links={navLinks} />
         <Content>
-          <Heading style={{fontFamily: 'StopBullying'}}>
-              Welcome to
+          <Heading>
+          {/* <Heading style={{fontFamily: 'StopBullying'}}> */}
+              WELCOME TO
               <br />
-              Bo Bear Games
+              BO BEAR GAMES
           </Heading>
         </Content>
       </HeroContainer>
