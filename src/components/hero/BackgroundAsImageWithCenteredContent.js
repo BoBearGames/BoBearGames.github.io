@@ -15,7 +15,7 @@ const StyledHeader = styled(Header)`
     ${tw`text-blue-900 hover:border-blue-700 hover:text-blue-700`}
   }
   ${NavToggle}.closed {
-    ${tw`text-gray-100 hover:text-primary-500`}
+    ${tw`text-gray-100 hover:text-blue-900`}
   }
 `;
 
