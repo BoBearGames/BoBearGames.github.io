@@ -44,7 +44,7 @@ export default ({ headingText = "Privacy Policy" }) => {
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <p>Last updated: April 6, 2022</p>
+            <p>Last updated: April 21, 2022</p>
 
             <p>
               We ask that you read this privacy policy (“Privacy Policy”) carefully as it contains important information on how we collect, use, store, disclose and process certain information collected in connection with our Services (described below).
@@ -70,7 +70,7 @@ export default ({ headingText = "Privacy Policy" }) => {
               </li>
               <li>
                 <p>
-                  Bo Bear Games integrates third party SDKs into our Applications. These SDKs are used for advertising to our users, analyzing service usage, enabling in-app purchases, or providing game services including account management. We provide third party service providers this data solely for internal operations of the Applications. This could include, but is not limited to, advertising identifiers, geolocation information and IP address. We encourage you to review the policies of our third party service providers listed below.
+                  Bo Bear Games integrates third party SDKs into our Applications. These SDKs are used for advertising to our users, analyzing service usage, enabling in-app purchases, or providing game services including account management. {/*DO NOT MODIFY START (Kochava)*/} We collect the following categories of your personal information and may sell it to third parties: identifiers, commercial information, internet or other electronic network activity information, geolocation data, and inferences drawn from these categories. {/*DO NOT MODIFY END (Kochava)*/} We encourage you to review the policies of our third party service providers listed below.
                 </p>
               </li>
               <li>
@@ -94,7 +94,7 @@ export default ({ headingText = "Privacy Policy" }) => {
             <ul>
               <li>
                 <p>
-                  We allow third parties to collect some information by which users cannot be identified. Non-personal information may include technical information about your device, such as your browser type, screen resolution, device type, language, type of operating system and geo location (only general location). Non-personal information is gathered by third party service providers while you are accessing the Applications. They are allowed to use this information to conduct research and analysis, but only for strictly limited purposes.
+                  We allow third parties to collect some information by which users cannot be identified. Non-personal information may include technical information about your device, such as your browser type, screen resolution, device type, language, type of operating system and geolocation (only general location). Non-personal information is gathered by third party service providers while you are accessing the Applications. They are allowed to use this information to conduct research and analysis.
                 </p>
               </li>
               <li>
@@ -139,7 +139,7 @@ export default ({ headingText = "Privacy Policy" }) => {
             <ul>
               <li>
                 <p>
-                  Third party service providers are allowed to collect and use non-personal information to conduct research and analysis, to target advertisements or other limited purposes. This information cannot be used to individually identify any user. We encourage you to review the policies of the third party service providers listed below.
+                  Third party service providers are allowed to collect and use non-personal information to conduct research and analysis, or to target advertisements. This information cannot be used to individually identify any user. We encourage you to review the policies of our third party service providers listed below.
                 </p>
               </li>
               <li>
@@ -190,7 +190,7 @@ export default ({ headingText = "Privacy Policy" }) => {
 
             <h2>Opt-out of targeted advertising:</h2>
             <p>
-              You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your iOS or Android device and selecting "limit ad tracking" (Apple iOS) or "opt-out of interest based ads" (Android).
+              You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your iOS or Android device and disabling "Allow Tracking" (Apple iOS) or enabling "Opt out of Ads Personalisation" (Android).
             </p>
 
             <h2>Other Rights:</h2>
@@ -200,12 +200,12 @@ export default ({ headingText = "Privacy Policy" }) => {
 
             <h2>California Residents:</h2>
             <p>
-              The California Consumer Privacy Act (“CCPA”) allows California residents to opt-out of the sale of your personal information. Bo Bear Games does not sell your personal information. We adhere to the CCPA by allowing you to opt-out of any future sale of your personal information by emailing us at <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link>.
+              The California Consumer Privacy Act (“CCPA”) allows California residents to opt-out of the sale of your personal information. We adhere to the CCPA by allowing you to opt-out of any future sale of your personal information via the setting in our Application(s).
             </p>
 
             <h1>5. Children's Privacy</h1>
             <p>
-              Our Services are not marketed to, or intended for, children under 13 and we do not knowingly collect, use, or disclose personal information from children under 13. We take children’s privacy seriously and encourage parents and guardians to play an active role in their children’s online experience. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take measures to promptly remove that information from our records.
+              Our Services are not marketed to, or intended for, children under 13 and we do not knowingly collect, use, or disclose personal information from children under 13. We take children’s privacy seriously and encourage parents and guardians to play an active role in their children’s online experience. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us via email at <Link href="mailto:support@bobeargames.com">support@bobeargames.com</Link> so that we can take measures to promptly remove that information from our records.
             </p>
 
             <h1>6. Data Retention</h1>
@@ -235,7 +235,7 @@ export default ({ headingText = "Privacy Policy" }) => {
 
             <h2>In-App Purchases:</h2>
             <p>
-              In order to make in-app purchases, a user must select a third party payment processor that we have integrated with our Applications to finalize and pay for their order. The third party operator’s privacy policy and security practices will apply to this process a user’s information. We encourage you to read that privacy statement before providing your information.
+              In order to make in-app purchases, a user must select a third party payment processor that we have integrated with our Applications to finalize and pay for their order. The third party operator’s privacy policy and security practices will apply to process a user’s information. We encourage you to read that privacy statement before providing your information.
             </p>
 
             <h2>Social Networks:</h2>
@@ -248,9 +248,16 @@ export default ({ headingText = "Privacy Policy" }) => {
               Bo Bear Games makes use of third party service providers in order to measure how users utilize our services so that we may improve them and to measure the effectiveness of our advertising campaigns.
             </p>
             <p>
+              <br />
               The following is a comprehensive list of the third party service providers we currently use in our Services, their location and links to their privacy policies. Please note that each individual Application we offer may only use a subset of these operators:
             </p>
             <ul>
+              <li>
+                <strong>Apple</strong> (located in the United States) - <Link href="https://www.apple.com/legal/privacy/en-ww/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Google Play Services</strong> (located in the United States) - <Link href="https://www.google.com/policies/privacy/">Read their Privacy Policy</Link>
+              </li>
               <li>
                 <strong>Applovin</strong> (located in the United States) - <Link href="https://www.applovin.com/privacy/">Read their Privacy Policy</Link>
               </li>
@@ -264,19 +271,16 @@ export default ({ headingText = "Privacy Policy" }) => {
                 <strong>Tapjoy</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://www.tapjoy.com/legal/general/privacy-policy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>UnityAds</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://unity3d.com/legal/privacy-policy">Read their Privacy Policy</Link>
+                <strong>Unity Ads</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://unity3d.com/legal/privacy-policy">Read their Privacy Policy</Link>
               </li>
               <li>
                 <strong>Kochava</strong> (located in the United States) - <Link href="https://www.kochava.com/kochava-difference/kochava-security-privacy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Apple</strong> (located in the United States) - <Link href="https://www.apple.com/legal/privacy/en-ww/">Read their Privacy Policy</Link>
+                <strong>Google Analytics</strong> (located in the United States) - <Link href="https://firebase.google.com/policies/analytics">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Google Play Services</strong> (located in the United States) - <Link href="https://www.google.com/policies/privacy/">Read their Privacy Policy</Link>
-              </li>
-              <li>
-                <strong>Firebase Crashlytics</strong> (located in the United States) - <Link href="https://firebase.google.com/policies/analytics">Read their Privacy Policy</Link>
+                <strong>Firebase Crashlytics</strong> (located in the United States) - <Link href="https://firebase.google.com/terms/crashlytics-app-distribution-data-processing-terms">Read their Privacy Policy</Link>
               </li>
             </ul>
 

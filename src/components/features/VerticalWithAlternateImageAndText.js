@@ -101,10 +101,10 @@ export default () => {
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
                 <LinksContainer>
-                  <Link>
+                  <Link href="https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-ios-gipp16d8f7bfbf53fe994&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid">
                     <img src={appleBadgeImageSrc} alt="" />
                   </Link>
-                  <Link>
+                  <Link href="https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-android-k9xcb7ada1495fdf&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid">
                     <img src={googleBadgeImageSrc} alt="" />
                   </Link>
                 </LinksContainer>
