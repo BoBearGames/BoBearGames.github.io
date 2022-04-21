@@ -60,7 +60,8 @@ export default () => {
       title: "COLOR SORT",
       description:
         "Combine rings with the same color to win! A simple yet challenging puzzle game that can be enjoyed by everyone. Can you solve it?",
-      url: "https://timerse.com"
+      appleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-ios-gipp16d8f7bfbf53fe994&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid",
+      googleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-android-k9xcb7ada1495fdf&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid"
     },
 
     {
@@ -69,7 +70,8 @@ export default () => {
       title: "WORD SCRAMBLE",
       description:
         "Unscramble words to crack the phrase, name the tune and more! This game will test your knowledge and puzzle solving abilities. If you love word games and puzzles, Word Scramble is the perfect brain tease for you.",
-      url: "https://timerse.com"
+      appleUrl: "",
+      googleUrl: ""
     },
 
     {
@@ -78,7 +80,8 @@ export default () => {
       title: "ADVENTURE BLAST",
       description:
         "Meet Jimmy, an adorable hand-drawn character. Jump from platform to platform, blast or dodge silly monsters and collect stars to unlock new exciting worlds. Reach new heights by blasting on rockets, propeller hats and more! How high can you jump?",
-      url: "https://timerse.com"
+      appleUrl: "",
+      googleUrl: ""
     }
   ];
 
@@ -101,10 +104,10 @@ export default () => {
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
                 <LinksContainer>
-                  <Link href="https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-ios-gipp16d8f7bfbf53fe994&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid">
+                  <Link href={card.appleUrl} onClick={(e) => { !card.appleUrl && e.preventDefault() }}>
                     <img src={appleBadgeImageSrc} alt="" />
                   </Link>
-                  <Link href="https://control.kochava.com/v1/cpi/click?campaign_id=kocolor-sort-android-k9xcb7ada1495fdf&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid">
+                  <Link href={card.googleUrl} onClick={(e) => { !card.googleUrl && e.preventDefault() }}>
                     <img src={googleBadgeImageSrc} alt="" />
                   </Link>
                 </LinksContainer>
