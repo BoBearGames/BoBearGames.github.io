@@ -10,7 +10,7 @@ import { ReactComponent as ArrowLeftIcon } from "../../images/arrow-left-2-icon.
 import { ReactComponent as ArrowRightIcon } from "../../images/arrow-right-2-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
-import aboutus from "../../images/aboutus.png";
+import aboutus from "../../images/IMG_0325.JPG";
 
 import "slick-carousel/slick/slick.css";
 
