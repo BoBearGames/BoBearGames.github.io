@@ -5,7 +5,7 @@ import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.sv
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import appleBadgeImageSrc from "images/download-on-the-app-store.png";
 import googleBadgeImageSrc from "images/google-play-badge.png"
-import colorSortImg from "images/color_sort_1.png";
+import colorSortImg from "images/color_sort_1.jpg";
 import scrambleImg from "images/wordscramble1.jpg";
 import blastImg from "images/blast1.jpg";
 

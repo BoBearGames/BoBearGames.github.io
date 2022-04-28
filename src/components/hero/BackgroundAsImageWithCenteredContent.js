@@ -12,7 +12,7 @@ const StyledHeader = styled(Header)`
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${DesktopNavLinks} ${AnchorNavLink}, ${LogoLink} {
-    ${tw`text-blue-900 hover:border-blue-700 hover:text-blue-700`}
+    ${tw`text-gray-100 hover:border-gray-900 hover:text-gray-900`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-blue-900`}
@@ -62,9 +62,9 @@ export default () => {
         <Content>
           <Heading>
           {/* <Heading style={{fontFamily: 'StopBullying'}}> */}
-              WELCOME TO
+              {/* WELCOME TO
               <br />
-              BO BEAR GAMES
+              BO BEAR GAMES */}
           </Heading>
         </Content>
       </HeroContainer>
