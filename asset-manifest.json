@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.de1fe9d1.chunk.css",
-    "main.js": "/static/js/main.d2741c67.chunk.js",
-    "main.js.map": "/static/js/main.d2741c67.chunk.js.map",
+    "main.js": "/static/js/main.6fc0fcee.chunk.js",
+    "main.js.map": "/static/js/main.6fc0fcee.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.37a39741.js",
     "runtime-main.js.map": "/static/js/runtime-main.37a39741.js.map",
     "static/css/2.917fa12d.chunk.css": "/static/css/2.917fa12d.chunk.css",
@@ -36,7 +36,7 @@
     "static/media/arrow-right-2-icon.dd6a8f82.svg": "/static/media/arrow-right-2-icon.dd6a8f82.svg",
     "static/media/arrow-right-3-icon.d415f77e.svg": "/static/media/arrow-right-3-icon.d415f77e.svg",
     "static/media/arrow-right-icon.c4ea6a92.svg": "/static/media/arrow-right-icon.c4ea6a92.svg",
-    "static/media/bg_beach.a68bc7cc.png": "/static/media/bg_beach.a68bc7cc.png",
+    "static/media/bg_beach.a430747c.png": "/static/media/bg_beach.a430747c.png",
     "static/media/blast1.bc4d7a93.jpg": "/static/media/blast1.bc4d7a93.jpg",
     "static/media/briefcase.svg": "/static/media/briefcase.21248a06.svg",
     "static/media/celebration-icon.0d9bb963.svg": "/static/media/celebration-icon.0d9bb963.svg",
@@ -47,8 +47,8 @@
     "static/media/chevron-left.svg": "/static/media/chevron-left.982a40d4.svg",
     "static/media/chevron-right.svg": "/static/media/chevron-right.d45fd2f4.svg",
     "static/media/clock.svg": "/static/media/clock.38585fec.svg",
-    "static/media/color_sort_1.0a67d931.png": "/static/media/color_sort_1.0a67d931.png",
-    "static/media/controller.afb83ab9.png": "/static/media/controller.afb83ab9.png",
+    "static/media/color_sort_1.89d98510.jpg": "/static/media/color_sort_1.89d98510.jpg",
+    "static/media/controller.b38b98a3.png": "/static/media/controller.b38b98a3.png",
     "static/media/customer-support-illustration.7164659e.svg": "/static/media/customer-support-illustration.7164659e.svg",
     "static/media/customers-logo-strip.680ac7c2.png": "/static/media/customers-logo-strip.680ac7c2.png",
     "static/media/customize-icon.367468c9.svg": "/static/media/customize-icon.367468c9.svg",
@@ -115,6 +115,6 @@
     "static/css/2.917fa12d.chunk.css",
     "static/js/2.3bdc04b5.chunk.js",
     "static/css/main.de1fe9d1.chunk.css",
-    "static/js/main.d2741c67.chunk.js"
+    "static/js/main.6fc0fcee.chunk.js"
   ]
 }
