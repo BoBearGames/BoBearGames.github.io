@@ -70,8 +70,8 @@ export default () => {
       title: "WORD SCRAMBLE",
       description:
         "Unscramble words to crack the phrase, name the tune and more! This game will test your knowledge and puzzle solving abilities. If you love word games and puzzles, Word Scramble is the perfect brain tease for you.",
-      appleUrl: "",
-      googleUrl: ""
+      appleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=koword-scramble-ios-nh8s24c642f6d3a3b&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid",
+      googleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=koword-scramble-android-d4y5474f69d06286a5d&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid"
     },
 
     {
