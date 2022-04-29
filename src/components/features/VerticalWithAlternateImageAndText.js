@@ -80,8 +80,8 @@ export default () => {
       title: "ADVENTURE BLAST",
       description:
         "Meet Jimmy, an adorable hand-drawn character. Jump from platform to platform, blast or dodge silly monsters and collect stars to unlock new exciting worlds. Reach new heights by blasting on rockets, propeller hats and more! How high can you jump?",
-      appleUrl: "",
-      googleUrl: ""
+      appleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=koadventure-blast-ios-0q3jvhj839fb2bf6a88d&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid",
+      googleUrl: "https://control.kochava.com/v1/cpi/click?campaign_id=koadventure-blast-android-wbu839069d5380badf&network_id=733&ko_exchange=true&site_id=hit_val1-hit_gender-hit_age-bobeargames-$hit_pubid&device_id=$QS_uid&click_id=DF_CLKID&adid=$user_uid"
     }
   ];
 
