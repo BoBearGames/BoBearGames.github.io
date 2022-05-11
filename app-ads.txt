@@ -235,3 +235,5 @@ appnexus.com,12964,RESELLER,f5ab79cb980f11d1
 pubmatic.com,156439,RESELLER,5d62403b186f2ace
 pubmatic.com,156344,RESELLER,5d62403b186f2ace
 indexexchange.com,184738,RESELLER
+# Pangle
+pangleglobal.com, 5003382, DIRECT
