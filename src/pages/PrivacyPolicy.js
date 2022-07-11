@@ -44,7 +44,7 @@ export default ({ headingText = "Privacy Policy" }) => {
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <p>Last updated: April 21, 2022</p>
+            <p>Last updated: July 10, 2022</p>
 
             <p>
               We ask that you read this privacy policy (“Privacy Policy”) carefully as it contains important information on how we collect, use, store, disclose and process certain information collected in connection with our Services (described below).
@@ -253,34 +253,49 @@ export default ({ headingText = "Privacy Policy" }) => {
             </p>
             <ul>
               <li>
-                <strong>Apple</strong> (located in the United States) - <Link href="https://www.apple.com/legal/privacy/en-ww/">Read their Privacy Policy</Link>
+                <strong>Apple</strong> <Link href="https://www.apple.com/legal/privacy/en-ww/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Google Play Services</strong> (located in the United States) - <Link href="https://www.google.com/policies/privacy/">Read their Privacy Policy</Link>
+                <strong>Google Play Services</strong> <Link href="https://www.google.com/policies/privacy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Applovin</strong> (located in the United States) - <Link href="https://www.applovin.com/privacy/">Read their Privacy Policy</Link>
+                <strong>Applovin</strong> <Link href="https://www.applovin.com/privacy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>AdColony</strong> (located in the United States) - <Link href="http://www.adcolony.com/privacy-policy/">Read their Privacy Policy</Link>
+                <strong>AdColony</strong> <Link href="http://www.adcolony.com/privacy-policy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Facebook</strong> (located in the United States) - <Link href="https://www.facebook.com/privacy/explanation">Read their Privacy Policy</Link>
+                <strong>Facebook</strong> <Link href="https://www.facebook.com/privacy/explanation">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Tapjoy</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://www.tapjoy.com/legal/general/privacy-policy/">Read their Privacy Policy</Link>
+              <strong>Admob</strong> <Link href="https://policies.google.com/privacy">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Unity Ads</strong> (headquartered in the United States with offices throughout the Americas, Asia and Europe) - <Link href="https://unity3d.com/legal/privacy-policy">Read their Privacy Policy</Link>
+                <strong>Unity Ads</strong> <Link href="https://unity3d.com/legal/privacy-policy">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Kochava</strong> (located in the United States) - <Link href="https://www.kochava.com/kochava-difference/kochava-security-privacy/">Read their Privacy Policy</Link>
+                <strong>Vungle</strong> <Link href="https://vungle.com/privacy/">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Google Analytics</strong> (located in the United States) - <Link href="https://firebase.google.com/policies/analytics">Read their Privacy Policy</Link>
+                <strong>Pangle International</strong> <Link href="https://www.pangleglobal.com/privacy/partner-en">Read their Privacy Policy</Link>
               </li>
               <li>
-                <strong>Firebase Crashlytics</strong> (located in the United States) - <Link href="https://firebase.google.com/terms/crashlytics-app-distribution-data-processing-terms">Read their Privacy Policy</Link>
+                <strong>Smaato</strong> <Link href="https://www.smaato.com/privacy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Tapjoy</strong> <Link href="https://www.tapjoy.com/legal/general/privacy-policy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Inmobi</strong> <Link href="https://www.inmobi.com/privacy-policy">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Kochava</strong> <Link href="https://www.kochava.com/kochava-difference/kochava-security-privacy/">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Google Analytics</strong> <Link href="https://firebase.google.com/policies/analytics">Read their Privacy Policy</Link>
+              </li>
+              <li>
+                <strong>Firebase Crashlytics</strong> <Link href="https://firebase.google.com/terms/crashlytics-app-distribution-data-processing-terms">Read their Privacy Policy</Link>
               </li>
             </ul>
 

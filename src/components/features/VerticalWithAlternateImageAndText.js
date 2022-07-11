@@ -6,8 +6,9 @@ import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import appleBadgeImageSrc from "images/download-on-the-app-store.png";
 import googleBadgeImageSrc from "images/google-play-badge.png"
 import colorSortImg from "images/color_sort_1.jpg";
-import scrambleImg from "images/wordscramble1.jpg";
+import scrambleImg from "images/wordscramble.PNG";
 import blastImg from "images/blast1.jpg";
+import wordspaceImg from "images/wordspace.jpg";
 
 const Container = tw.div`relative`;
 
@@ -54,6 +55,16 @@ const SvgDotPattern4 = tw(
 
 export default () => {
   const cards = [
+    {
+      imageSrc: wordspaceImg,
+      subtitle: "Word",
+      title: "WORDSPACE",
+      description:
+        "A fun and unique twist on the traditional crossword puzzle! Easy to start with, the puzzles slowly get harder to match your growing word skills. Have fun while you learn, exercise your brain and become a word master!",
+      appleUrl: "https://apps.apple.com/us/app/wordspace-mindful-crosswords/id1627919565",
+      googleUrl: "https://play.google.com/store/apps/details?id=com.bobeargames.cross"
+    },
+    
     {
       imageSrc: colorSortImg,
       subtitle: "Puzzle",
